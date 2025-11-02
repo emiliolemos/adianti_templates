@@ -2,7 +2,6 @@
 class {CLASS_NAME} extends TPage
 {
 
-    use MFuncoesTrait;
 
     private $pdf;
     private $empresa;

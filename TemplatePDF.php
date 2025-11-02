@@ -14,7 +14,7 @@ class {CLASS_NAME} extends TPage
         parent::__construct();
 
         $this->empresa            = "001";
-        $this->anobase            = Data('Y');
+        $this->anobase            = Date('Y');
         $this->periodo            = '';
         $this->titulos            = ['Relatorio Exemplo',
                                      'Subtitulo1',

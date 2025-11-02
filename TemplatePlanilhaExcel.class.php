@@ -2,7 +2,7 @@
 
 use Adianti\Database\TTransaction;
 
-class {CLASS_NAME}Excel extends TPage
+class {CLASS_NAME} extends TPage
 {
 
     //use MFuncoesTrait;

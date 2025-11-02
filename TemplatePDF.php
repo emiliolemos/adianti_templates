@@ -13,7 +13,9 @@ class {CLASS_NAME} extends TPage
     {
         parent::__construct();
 
-        $this->empresa            = "001"; // aqui voce pode colocar a sua funcao para pegar a empresa
+        $this->empresa            = new stdClass; // aqui voce pode usar uma funcao para retornar um objeto
+        $this->empresa->nome = 'EMPRESA TESTE';
+        
         $this->anobase            = date('Y'); // aqui voce pode colocar a sua funcao para pegar o exercicio de referencia
         $this->periodo            = '';
         $this->titulos            = ['Relatorio Exemplo',

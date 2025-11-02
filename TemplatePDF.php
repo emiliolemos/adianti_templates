@@ -13,8 +13,8 @@ class {CLASS_NAME} extends TPage
     {
         parent::__construct();
 
-        $this->empresa            = "001";
-        $this->anobase            = Date('Y');
+        $this->empresa            = "001"; // aqui voce pode colocar a sua funcao para pegar a empresa
+        $this->anobase            = date('Y'); // aqui voce pode colocar a sua funcao para pegar o exercicio de referencia
         $this->periodo            = '';
         $this->titulos            = ['Relatorio Exemplo',
                                      'Subtitulo1',
@@ -32,7 +32,7 @@ class {CLASS_NAME} extends TPage
         // $this->pdf->setPeriodo('JANEIRO/2023');
         // $this->pdf->setTitulos(['BALANCETE FINANCEIRO', 'CONSOLIDADO', 'SUBTITULO']);
 
-        $this->pdf->setNomeEmpresa($this->empresa->nome);
+        $this->pdf->setNomeEmpresa($this->empresa->nome ?? 'EMPRESA MODELO');
         $this->pdf->setAnobase($this->anobase);
         $this->pdf->setPeriodo($this->periodo);
         $this->pdf->setTitulos($this->titulos);

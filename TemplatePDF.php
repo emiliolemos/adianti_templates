@@ -13,8 +13,8 @@ class {CLASS_NAME} extends TPage
     {
         parent::__construct();
 
-        $this->empresa            = MSispubFuncoes::getEmpresa(TSession::getValue('EMPRESA_ID'));
-        $this->anobase            = MSispubGlobal::getGlobalAnobase();
+        $this->empresa            = "001";
+        $this->anobase            = Data('Y');
         $this->periodo            = '';
         $this->titulos            = ['Relatorio Exemplo',
                                      'Subtitulo1',

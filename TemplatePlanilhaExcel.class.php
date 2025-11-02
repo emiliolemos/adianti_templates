@@ -5,7 +5,7 @@ use Adianti\Database\TTransaction;
 class {CLASS_NAME}Excel extends TPage
 {
 
-    use MFuncoesTrait;
+    //use MFuncoesTrait;
 
     private $pdf;
     public function __construct()
@@ -28,11 +28,11 @@ class {CLASS_NAME}Excel extends TPage
     {
 
         // Criando uma planilha        
-        // echo "Teste Excel";
-        // $excel = new MyExcel();
-        // $excel->novaPlanilha();
-        // $excel->objPHPExcelModelo->getActiveSheet()->setCellValue('A1','TESTE');
-        // $excel->Save();
+        echo "Teste Excel";
+        $excel = new MyExcel();
+        $excel->novaPlanilha();
+        $excel->objPHPExcelModelo->getActiveSheet()->setCellValue('A1','TESTE');
+        $excel->Save();
 
         // Baixando uma planilha
         // echo "Teste Excel 2";

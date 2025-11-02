@@ -25,15 +25,8 @@ class ObraObraForm extends TPage
     use Adianti\Base\AdiantiFileSaveTrait;
 
     use MFormTrait;
-    // use MFuncoesTrait;
-    // use MObraFieldsTrait; // Contem as definicoes dos campos
 
-    use ObraObraFormHistoricoTrait;
-    use ObraObraFormDocumentosTrait;
-    use ObraObraFormContratoTrait;
-    use ObraObraFormFiscalTrait;
-    use ObraObraFormFonteTrait;
-    use ObraObraFormMedicaoTrait;
+
 
     /**
      * Form constructor
